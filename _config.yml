@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: CuZaoo的程序文档
+subtitle: '一个啥活都参与的程序员'
+description: '涉猎的主要编程语言为Java、python、js'，领域涵盖前端Vue、后端Spring、爬虫、深度学习
+keywords: "Java、Python、JS、深度学习"
+author: CuZaoo
+language: zh-CN
 timezone: ''
 
 # URL

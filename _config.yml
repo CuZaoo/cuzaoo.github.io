@@ -5,7 +5,7 @@
 # Site
 title: CuZaoo的程序文档
 subtitle: '一个啥活都参与的程序员'
-description: '涉猎的主要编程语言为Java、python、js'，领域涵盖前端Vue、后端Spring、爬虫、深度学习
+description: '涉猎的主要编程语言为Java、python、js，领域涵盖前端Vue、后端Spring、爬虫、深度学习'
 keywords: "Java、Python、JS、深度学习"
 author: CuZaoo
 language: zh-CN
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,3 +105,8 @@ deploy:
   repo: git@github.com:CuZaoo/cuzaoo.github.io.git
   branch: master
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

@@ -52,18 +52,41 @@
     <link href="http://example.com/2025/03/05/%E9%97%AE%E9%A2%98/"/>
     <id>http://example.com/2025/03/05/%E9%97%AE%E9%A2%98/</id>
     <published>2025-03-05T14:55:47.000Z</published>
-    <updated>2025-03-08T06:37:51.408Z</updated>
+    <updated>2025-06-01T03:08:39.553Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">记录可能会整理成文档的问题</span><br></pre></td></tr></table></figure><ul><li>[ ]  1.为什么要前端工程化？传统开发的弊端？工程化带来的优势？</li><li>[ ]  2.Vue3的统一目录结构？</li><li>[ ]  3.如何统一代码风格？</li><li>[ ]  4.Vue的相关信息？Vue历史</li><li>[ ]  5.Vue 虚拟Dom（<a href="https://cn.vuejs.org/guide/extras/rendering-mechanism.html）？">https://cn.vuejs.org/guide/extras/rendering-mechanism.html）？</a> Diff算法？</li><li>[ ]  6.浏览器的回流和重绘？</li><li>[ ]  7.Vue3组合式API</li><li>[ ]  8.Vue封装常用函数</li><li>[ ]  9.Vue是怎么解决传统开发中的页面跳转的？</li><li>[ ]  10.现代化开发的概念？SPA / SSR / SSG？同构渲染？预渲染？ISR/DPR?</li><li>[ ]  11.服务端开发？APP开发？桌面程序开发？应用脚本开发？</li><li>[ ]  12.构建工具的好处</li><li>[ ]  13.单组件编写：</li></ul>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span</summary>
-      
+    <summary type="html">汇总前端开发常见问题，包括工程化、Vue、虚拟DOM、现代化开发、构建工具等内容，便于后续整理成文档。</summary>
     
     
     
+    <category term="前端" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="知识整理" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+    
+    
+    <category term="前端工程化" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    
+    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
+    
+    <category term="代码风格" scheme="http://example.com/tags/%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC/"/>
+    
+    <category term="虚拟DOM" scheme="http://example.com/tags/%E8%99%9A%E6%8B%9FDOM/"/>
+    
+    <category term="Diff算法" scheme="http://example.com/tags/Diff%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="浏览器" scheme="http://example.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="组合式API" scheme="http://example.com/tags/%E7%BB%84%E5%90%88%E5%BC%8FAPI/"/>
+    
+    <category term="SPA" scheme="http://example.com/tags/SPA/"/>
+    
+    <category term="SSR" scheme="http://example.com/tags/SSR/"/>
+    
+    <category term="SSG" scheme="http://example.com/tags/SSG/"/>
+    
+    <category term="构建工具" scheme="http://example.com/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

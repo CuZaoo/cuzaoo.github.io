@@ -47,10 +47,18 @@
 <h2 id="4-默认值为-undefined"><a href="#4-默认值为-undefined" class="headerlink" title="4. 默认值为 undefined"></a>4. 默认值为 undefined</h2><p>如果声明了变量但没有赋值，它的默认值为 undefined：</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> i;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(i); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>undefined</tag>
+        <tag>类型判断</tag>
+        <tag>使用场景</tag>
+      </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>/2025/06/01/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</url>
+    <title>Hexo 相关知识</title>
+    <url>/2025/06/01/Hexo%20%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<h1 id="Hexo-相关知识"><a href="#Hexo-相关知识" class="headerlink" title="Hexo 相关知识"></a>Hexo 相关知识</h1><h2 id="一-什么是Hexo？"><a href="#一-什么是Hexo？" class="headerlink" title="一.什么是Hexo？"></a>一.什么是Hexo？</h2><p>核心定义：一个快速、简洁且高效的静态博客框架</p>
 <p>工作原理：使用 Markdown（或其他标记语言）编写内容，通过 Hexo 引擎解析，结合主题模板，生成静态 HTML、CSS、JavaScript 文件。</p>
 <p>技术栈：基于 Node.js 运行</p>
@@ -122,6 +130,17 @@
 </table>
 </div>
 ]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>静态博客</tag>
+        <tag>Node.js</tag>
+        <tag>部署</tag>
+        <tag>目录结构</tag>
+        <tag>命令</tag>
+      </tags>
   </entry>
   <entry>
     <title>问题</title>

@@ -186,6 +186,214 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/06/01/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CuZaoo">
+      <meta itemprop="description" content="涉猎的主要编程语言为Java、python、js，领域涵盖前端Vue、后端Spring、爬虫、深度学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CuZaoo的程序文档">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/06/01/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-06-01 09:04:16 / 修改时间：10:46:12" itemprop="dateCreated datePublished" datetime="2025-06-01T09:04:16+08:00">2025-06-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Hexo-相关知识"><a href="#Hexo-相关知识" class="headerlink" title="Hexo 相关知识"></a>Hexo 相关知识</h1><h2 id="一-什么是Hexo？"><a href="#一-什么是Hexo？" class="headerlink" title="一.什么是Hexo？"></a>一.什么是Hexo？</h2><p>核心定义：一个快速、简洁且高效的静态博客框架</p>
+<p>工作原理：使用 Markdown（或其他标记语言）编写内容，通过 Hexo 引擎解析，结合主题模板，生成静态 HTML、CSS、JavaScript 文件。</p>
+<p>技术栈：基于 Node.js 运行</p>
+<h2 id="二-如何安装和部署？"><a href="#二-如何安装和部署？" class="headerlink" title="二.如何安装和部署？"></a>二.如何安装和部署？</h2><p><strong>安装</strong></p>
+<ol>
+<li>前提：安装 Node.js (&gt;= 12.0) 和 Git。</li>
+<li>全局安装 Hexo CLI: npm install -g hexo-cli</li>
+<li>初始化项目：hexo init folder_name</li>
+<li>进入项目目录：cd folder_name</li>
+<li>安装依赖：npm install</li>
+<li>本地预览：hexo server (hexo s)</li>
+</ol>
+<p><strong>部署</strong></p>
+<ol>
+<li>配置 _config.yml： 设置 url, root, 最重要的是 deploy 部分（配置类型如 git, 仓库地址、分支）。</li>
+<li>安装部署插件： 常用 hexo-deployer-git: npm install hexo-deployer-git —save</li>
+<li>生成 &amp; 部署： hexo clean &amp;&amp; hexo deploy (hexo clean &amp;&amp; hexo d)</li>
+</ol>
+<h2 id="三-目录构成"><a href="#三-目录构成" class="headerlink" title="三.目录构成"></a>三.目录构成</h2><ul>
+<li>_config.yml (站点配置文件)： 全局配置（标题、描述、URL、主题、部署设置等）。功能： 控制整个站点的行为。部署： 随源码一起。</li>
+<li>source/ 目录： 存放用户内容（Markdown 文件 _posts/, _drafts/，图片、CSS/JS 资源等）。功能： 内容核心。部署： 源文件随源码；生成的静态资源在 public/。</li>
+<li>themes/ 目录： 存放主题。功能： 定义网站外观、布局和功能扩展点。部署： 主题作为项目子模块或直接复制，随源码一起；主题的静态文件在构建时也会被处理复制到 public/。</li>
+<li>scaffolds/ 目录： 模板文件。功能： 定义 hexo new 命令生成新文章、页面等的初始结构。部署： 仅开发时使用，不部署。</li>
+<li>public/ 目录 (生成)： 存放最终生成的静态网站文件。功能： 部署的内容。部署： 仅 这个目录的内容需要部署到服务器/CDN。通常由部署命令自动完成。</li>
+<li>node_modules/ 目录： 存放 npm 依赖（Hexo 核心、插件、主题依赖）。功能： 运行和构建所需。部署： 绝不 部署此目录。由 .gitignore 排除。</li>
+</ul>
+<h2 id="四-Hexo-极简命令速查表"><a href="#四-Hexo-极简命令速查表" class="headerlink" title="四.Hexo 极简命令速查表"></a>四.Hexo 极简命令速查表</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">场景</th>
+<th style="text-align:left">完整命令</th>
+<th style="text-align:left">简写命令</th>
+<th style="text-align:left">作用说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">写新文章</td>
+<td style="text-align:left"><code>hexo new &quot;标题&quot;</code></td>
+<td style="text-align:left"><code>hexo n</code></td>
+<td style="text-align:left">在 <code>source/_posts</code> 下创建文章</td>
+</tr>
+<tr>
+<td style="text-align:left">本地预览</td>
+<td style="text-align:left"><code>hexo server</code></td>
+<td style="text-align:left"><code>hexo s</code></td>
+<td style="text-align:left">启动本地服务器（默认4000端口）</td>
+</tr>
+<tr>
+<td style="text-align:left">生成静态页</td>
+<td style="text-align:left"><code>hexo generate</code></td>
+<td style="text-align:left"><code>hexo g</code></td>
+<td style="text-align:left">生成静态HTML到 <code>public</code> 目录</td>
+</tr>
+<tr>
+<td style="text-align:left">部署到网站</td>
+<td style="text-align:left"><code>hexo deploy</code></td>
+<td style="text-align:left"><code>hexo d</code></td>
+<td style="text-align:left">发布到GitHub Pages等托管平台</td>
+</tr>
+<tr>
+<td style="text-align:left">清理缓存</td>
+<td style="text-align:left"><code>hexo clean</code></td>
+<td style="text-align:left">无简写</td>
+<td style="text-align:left">清除缓存和旧生成文件</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/03/05/%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="CuZaoo">
+      <meta itemprop="description" content="涉猎的主要编程语言为Java、python、js，领域涵盖前端Vue、后端Spring、爬虫、深度学习">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CuZaoo的程序文档">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/03/05/%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2025-03-05 22:55:47" itemprop="dateCreated datePublished" datetime="2025-03-05T22:55:47+08:00">2025-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-03-08 14:37:51" itemprop="dateModified" datetime="2025-03-08T14:37:51+08:00">2025-03-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">记录可能会整理成文档的问题</span><br></pre></td></tr></table></figure>
+<ul>
+<li>[ ]  1.为什么要前端工程化？传统开发的弊端？工程化带来的优势？</li>
+<li>[ ]  2.Vue3的统一目录结构？</li>
+<li>[ ]  3.如何统一代码风格？</li>
+<li>[ ]  4.Vue的相关信息？Vue历史</li>
+<li>[ ]  5.Vue 虚拟Dom（<a target="_blank" rel="noopener" href="https://cn.vuejs.org/guide/extras/rendering-mechanism.html）？">https://cn.vuejs.org/guide/extras/rendering-mechanism.html）？</a> Diff算法？</li>
+<li>[ ]  6.浏览器的回流和重绘？</li>
+<li>[ ]  7.Vue3组合式API</li>
+<li>[ ]  8.Vue封装常用函数</li>
+<li>[ ]  9.Vue是怎么解决传统开发中的页面跳转的？</li>
+<li>[ ]  10.现代化开发的概念？SPA / SSR / SSG？同构渲染？预渲染？ISR/DPR?</li>
+<li>[ ]  11.服务端开发？APP开发？桌面程序开发？应用脚本开发？</li>
+<li>[ ]  12.构建工具的好处</li>
+<li>[ ]  13.单组件编写：</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/26/JS-%E8%AE%A8%E8%AE%BAnull%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%86%E5%92%8C%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -351,7 +559,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
